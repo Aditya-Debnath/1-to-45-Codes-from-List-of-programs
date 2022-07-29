@@ -25,3 +25,23 @@ int main()
     return 0;
 }
 
+3. Write a C program to check an integer whether odd or even.
+Ans:-
+
+#include <stdio.h>
+
+int main()
+
+{
+    int a;
+    
+    printf("Give me number=");
+    scanf("%d",&a);
+    
+    if (a%2!=0)
+    printf("The number is odd\n");
+    else
+    printf("The number is even\n");
+}
+
+
