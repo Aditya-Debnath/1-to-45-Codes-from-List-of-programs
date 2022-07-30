@@ -315,37 +315,38 @@ int main()
 multiple (LCM) of two numbers.
 
 16. Write a C program to find the number of integers divisible by 5 between the given range num1 and num2, where num1 < num2. Also find the sum of all these integer numbers, which are divisible by 5 and display the total.
-Ans:-
+Ans :-
 
 #include<stdio.h>
 int main()
+
 {
 
-   int i, Num1, Num2, count, sum = 0;
-
-   printf("Enter the value of Num1 and Num2\n");
-   scanf("%d %d",&Num1,&Num2);
-   printf("Integers divisible by 5 are\n");
-
-   for (i=Num1;i<Num2;i++)
-   {
+    int i, Num1, Num2, count, sum = 0;
+   
+    printf("Enter the value of Num1 and Num2\n");
+    scanf("%d %d",&Num1,&Num2);
+    printf("Integers divisible by 5 are\n");
+   
+    for (i=Num1;i<Num2;i++)
+    {
       if (i%5==0)
       {
          printf("%d,",i);
          count++;
          sum = sum + i;
       }
-   }
+    }
+   
+    printf("\nNumber of integers divisible by 5 between %d and %d = %d\n",Num1,Num2,count);
+    printf("Sum of all integers that are divisible by 5 = %d\n",sum);
 
-  printf("\nNumber of integers divisible by 5 between %d and %d = %d\n",Num1,Num2,count);
-  printf("Sum of all integers that are divisible by 5 = %d\n",sum);
-
-  return 0;
-  
+    return 0; 
+    
 }
 
-
 17. Write a C program to convert a line of lowercase text to uppercase.
+Ans :-
 
 18. Write a program that asks user an arithmetic operator('+','-','*' or '/') and two operands and perform the corresponding calculation on the operands.
 
@@ -412,13 +413,108 @@ int main()
 27. Write a C program to find a list of prime numbers.
 Ans :-
 
+#include <stdio.h>
+int main()
+{
+    
+    int num1, num2, flag_var, i, j;
+   
+    printf("Enter two range(input integer numbers only):");
+    scanf("%d %d", &num1, &num2);
+    printf("Prime numbers from %d and %d are:\n", num1, num2);
+   
+    for(i=num1+1; i<num2; ++i)
+    {
+      flag_var = 0; // use of this statement, it's just like a trap.
+      for(j=2; j<=i/2; ++j)
+      {
+         if(i%j == 0)
+         {
+            flag_var = 1;
+            break;
+         }
+      }
+      if(flag_var == 0)
+      {
+         printf("%d\n",i);
+      }
+    }
+    return 0;
+  
+}
+
 28. Write a C program to find the fibonacci series in c programming: c program for Fibonacci series without and with recursion.
+Ans :-
+
 
 29. Write a C program to find the maximum or highest element in array.
 Ans:-
 
+#include<stdio.h>
+int main()
+{
+
+    int size;
+    printf("Enter the number of elements in array:\n");
+    scanf("%d", &size);
+
+    int array[size], maximum, a, location = 1;
+
+    printf("Enter %d integers:\n", size);
+
+    for (a = 0 ; a < size ; a++)
+    {
+        scanf("%d", &array[a]);
+
+        maximum = array[0];
+    }
+    for (a = 1 ; a < size ; a++)
+    {
+        if (array[a] > maximum)
+        {
+                maximum  = array[a];
+                location = a+1;
+        }
+    }
+
+    printf("Maximum element is present at location %d and it's value is %d.\n", location, maximum);
+    
+}
+
+
 30. Write a C program to find the minimum or smallest element in array.
 Ans:-
+
+#include<stdio.h>
+int main()
+{
+
+    int size;
+
+    printf("Enter the number of elements in array\n");
+    scanf("%d", &size);
+
+    int array[size], minimum, i, location = 1;
+
+    printf("Enter %d integers\n", size);
+
+    for (i = 0; i < size; i++)
+        scanf("%d", &array[i]);
+
+    minimum = array[0];
+
+    for (i = 1; i < size; i++)
+    {
+        if (array[i] < minimum)
+        {
+                minimum  = array[i];
+                location = i+1;
+        }
+    }
+
+    printf("Minimum element is present at location %d and it's value is %d.\n", location, minimum);
+    
+}
 
 31. Write a C program to find an item from an array by Linear search.
 
