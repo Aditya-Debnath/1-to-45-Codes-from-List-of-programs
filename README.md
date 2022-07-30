@@ -319,7 +319,6 @@ Ans:-
 
 #include<stdio.h>
 int main()
-
 {
 
    int i, Num1, Num2, count, sum = 0;
@@ -342,7 +341,7 @@ int main()
   printf("Sum of all integers that are divisible by 5 = %d\n",sum);
 
   return 0;
-
+  
 }
 
 
@@ -363,8 +362,10 @@ int main()
 {
 
     int a, i, N, sum = 0, count;
+    
     float Average;
     scanf("%d",&N);
+    
     for(i = 0 ; i < N ; i++)
     {
         scanf("%d",&a);
