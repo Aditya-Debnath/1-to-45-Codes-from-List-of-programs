@@ -315,6 +315,36 @@ int main()
 multiple (LCM) of two numbers.
 
 16. Write a C program to find the number of integers divisible by 5 between the given range num1 and num2, where num1 < num2. Also find the sum of all these integer numbers, which are divisible by 5 and display the total.
+Ans:-
+
+#include<stdio.h>
+int main()
+
+{
+
+   int i, Num1, Num2, count, sum = 0;
+
+   printf("Enter the value of Num1 and Num2\n");
+   scanf("%d %d",&Num1,&Num2);
+   printf("Integers divisible by 5 are\n");
+
+   for (i=Num1;i<Num2;i++)
+   {
+      if (i%5==0)
+      {
+         printf("%d,",i);
+         count++;
+         sum = sum + i;
+      }
+   }
+
+  printf("\nNumber of integers divisible by 5 between %d and %d = %d\n",Num1,Num2,count);
+  printf("Sum of all integers that are divisible by 5 = %d\n",sum);
+
+  return 0;
+
+}
+
 
 17. Write a C program to convert a line of lowercase text to uppercase.
 
