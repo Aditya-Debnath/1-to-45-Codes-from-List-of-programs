@@ -75,6 +75,33 @@ int main()
 4. Write a C program C program to perform addition, subtraction, multiplication and division.
 Ans :-
 
+#include<stdio.h>
+
+int main()
+
+{
+
+    int a, b, sum, subtraction, multiplication;
+    float division;
+
+    printf("Enter two numbers:");
+    scanf("%d %d",&a,&b);
+
+    sum = a + b;
+
+    subtraction = a - b;
+
+    multiplication = a * b;
+
+    division = a / b;
+
+    printf("Addition = %d,\nSubtraction = %d,\nMultiplication %d,\nDivision %.3f.\n",sum,subtraction,multiplication,division);
+
+    return 0;
+    
+}
+
+
 5. Write a C program to swap two numbers.
 Ans :-
 
