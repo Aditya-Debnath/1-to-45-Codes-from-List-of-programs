@@ -422,6 +422,38 @@ int main()
 23. Write C Program to reverse a number.
 
 24. Write a C program to check Palindrome number: A palindrome number is a number such that if we reverse it, it will not change.
+Ans :-
+কোনো একটি সংখ্যা যেমন 121 কে উল্টা করে লিখলেও 121 হয়, এই ধরণের সংখ্যাকে প্যালিন্ডোম (Palindrome) সংখ্যা বলে।
+আবার, কোনো শব্দকে উল্টা ভাবে লিখলে যদি একই রকম হয় তবে সেটি একটা প্যালিন্ডোম।
+
+#include<stdio.h>
+int main()
+{
+
+    int num, n, reminder, rev = 0;
+    
+    printf("Enter a number : ");
+    scanf("%d",&num);
+    
+    n = num;
+    while (num > 0)
+    {
+        reminder = num % 10;
+        rev = rev * 10 + reminder;
+        num = num / 10;
+    }
+    if (n == rev)
+    {
+        printf("This is a palindrome number.\n");
+    }
+    else
+    {
+        printf("This is not a palindrome number.\n");
+    }
+    return 0;
+    
+}
+
 
 25. Write a C program to print patterns of numbers and stars.
          *
