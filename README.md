@@ -420,7 +420,7 @@ int main()
         }
         else
         {
-           printf("SKIP\n");
+           printf("");
         }
     }
     Average = sum/count;
