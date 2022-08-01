@@ -312,6 +312,22 @@ int main()
 13. Write a C program to calculate factorial of a number.
 Ans :-
 
+#include<stdio.h>
+int main()
+{
+
+    int i,n;
+    scanf("%d",&n);
+    int fact =1;
+    for(i=1;i<=n;i=i+1)
+    {
+        fact = fact*i;
+    }
+    printf("%d",fact);
+    
+}
+
+
 14. Write a C program to find the average of a list of numbers.
 Ans :-
 
