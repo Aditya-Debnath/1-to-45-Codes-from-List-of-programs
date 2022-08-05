@@ -596,6 +596,30 @@ int main()
 32. Write a C program to find an item from an array by binary search.
 
 33. Write a C program to reverse an array.
+Ans:-
+
+#include<stdio.h>
+int main()
+{
+    int i, j, num;
+    printf("How many number you will take = ")
+    scanf("%d",&num);
+    printf("Give me the number = \n")
+    int a[num], b[num];
+    for(i=0;i<num;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i = num - 1, j = 0; i >= 0;i--,j++)
+    {
+        b[j] = a[i];
+    }
+    printf("Reverse the number : \n");
+    for (i = 0; i < num; i++)
+        printf("%d\n", b[i]);
+
+}
+
 
 34. Write a C program to insert an element into an array.
 
