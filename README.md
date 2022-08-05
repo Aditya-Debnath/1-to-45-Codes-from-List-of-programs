@@ -601,6 +601,7 @@ Ans:-
 #include<stdio.h>
 int main()
 {
+
     int i, j, num;
     printf("How many number you will take = ")
     scanf("%d",&num);
@@ -617,7 +618,9 @@ int main()
     printf("Reverse the number : \n");
     for (i = 0; i < num; i++)
         printf("%d\n", b[i]);
-
+        
+    return 0;
+        
 }
 
 
