@@ -665,5 +665,34 @@ Ans:-
 45. Write a C program to concatenate two strings.
 
 46. Write a C program to reverse a string.
+Ans:-
+
+#include<stdio.h>
+int main()
+{
+
+    int i, j, num;
+    printf("How many number you will take for sentence = ");
+    scanf("%d",&num);
+    printf("Give me the sentence = \n");
+    char a[num], b[num];
+    for(i=0;i<num;i++)
+        {
+            scanf("%c",&a[i]);
+        }
+    for(i = num - 1, j = 0; i >= 0;i--,j++)
+        {
+            b[j] = a[i];
+        }
+    printf("Reverse the sentence : \n");
+    for (i = 0; i < num; i++)
+    {
+        printf("%c", b[i]);
+    }
+    
+    return 0;
+        
+}
+
 
 
