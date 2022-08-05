@@ -639,6 +639,20 @@ int main()
 40. Write a C program to print a string.
 Ans:-
 
+#include<stdio.h>
+int main()
+{
+
+    int i;
+    char university_name[20]="East West University";
+    for(i=0;i<20;i++)
+    {
+        printf("%c",university_name[i]);
+    }
+    
+    return 0;
+}
+
 41. Write a C program to print length of string.
 
 42. Write a C program to compare two strings.
