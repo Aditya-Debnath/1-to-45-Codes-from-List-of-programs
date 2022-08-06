@@ -592,8 +592,10 @@ int main()
 }
 
 31. Write a C program to find an item from an array by Linear search.
+Ans:-
 
 32. Write a C program to find an item from an array by binary search.
+Ans:-
 
 33. Write a C program to reverse an array.
 Ans:-
@@ -625,16 +627,104 @@ int main()
 
 
 34. Write a C program to insert an element into an array.
+Ans:-
 
 35. Write a C program to delete an element from an array.
+Ans:-
 
 36. Write a C program to add two matrices.
+Ans:-
 
-37. Write a C program to Subtract matrices
+#include<stdio.h>
+int main()
+{
+
+    int i, j, m, n;
+    printf("How many row and column you will take for two Matrix :");
+    scanf("%d %d",&m,&n);
+    int a[m][n], b[m][n], sum[m][n];
+    printf("Enter First Matrix:\n");
+    for(i = 0;i<m;i++)
+    {
+        for(j = 0;j<n;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("Enter Second Matrix:\n");
+    for(i = 0;i<m;i++)
+    {
+        for(j = 0;j<n;j++)
+        {
+            scanf("%d",&b[i][j]);
+        }
+    }
+    printf("Sum of two Matrix:\n");
+    for(i = 0;i<m;i++)
+    {
+        for(j = 0;j<n;j++)
+        {
+            sum[i][j] = a[i][j] + b[i][j];
+            printf("%d\t",sum[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+    return 0;
+
+}
+
+
+37. Write a C program to Subtract matrices.
+Ans:-
+
+#include<stdio.h>
+int main()
+{
+
+    int i, j, m, n;
+    printf("How many row and column you will take for two Matrix :");
+    scanf("%d %d",&m,&n);
+    int a[m][n], b[m][n], subtract[m][n];
+    printf("Enter First Matrix:\n");
+    for(i = 0;i<m;i++)
+    {
+        for(j = 0;j<n;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("Enter Second Matrix:\n");
+    for(i = 0;i<m;i++)
+    {
+        for(j = 0;j<n;j++)
+        {
+            scanf("%d",&b[i][j]);
+        }
+    }
+    printf("Subtract of two Matrix:\n");
+    for(i = 0;i<m;i++)
+    {
+        for(j = 0;j<n;j++)
+        {
+            subtract[i][j] = a[i][j] - b[i][j];
+            printf("%d\t",subtract[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+    return 0;
+
+}
+
 
 38. Write a C program to transpose a matrix.
+Ans:-
 
 39. Write a C program to multiply two matrices.
+Ans:-
 
 40. Write a C program to print a string.
 Ans:-
