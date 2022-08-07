@@ -520,6 +520,30 @@ int main()
 
 28. Write a C program to find the fibonacci series in c programming: c program for Fibonacci series without and with recursion.
 Ans :-
+উল্লেখ্য যে, পর পর দুটি সংখ্যা যোগ করলে ফিবন্যাসি সিরিজের তৃতীয় সংখ্যাটি পাওয়া যায়।
+
+#include<stdio.h>
+main()
+{
+
+    int i, Max;
+    scanf("%d",&Max); // Taking the number for consecutive fibonacci. Just like, 10, 20 or ..........
+    int fibo [Max];
+    fibo [0] = 1;
+    fibo [1] = 1;
+    printf("\nFirst %d consecutive fibonacci numbers are :\n",Max);
+    for(i=2;i<=Max;i++)
+    {
+        fibo [i] = fibo [i-2] + fibo [i-1];
+    }
+    for(i=0;i<Max;i++)
+    {
+        printf("%5d",fibo [i]);
+    }
+    return 0;
+    
+}
+
 
 
 29. Write a C program to find the maximum or highest element in array.
@@ -762,6 +786,11 @@ int main()
 
 39. Write a C program to multiply two matrices.
 Ans:-
+
+#include<stdio.h>
+int main()
+
+
 
 40. Write a C program to print a string.
 Ans:-
