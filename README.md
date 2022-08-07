@@ -723,6 +723,43 @@ int main()
 38. Write a C program to transpose a matrix.
 Ans:-
 
+#include<stdio.h>
+int main()
+{
+
+    int i, j, m, n;
+    printf("");
+    scanf("%d %d",&m,&n);
+    int Matrix[m][n], Transpose[m][n];
+    printf("Input a Matrix:");
+    for(i = 0;i<m;i++)
+    {
+        for(j = 0;j<n;j++)
+        {
+            scanf("%d",&Matrix[i][j]);
+        }
+    }
+    for(i = 0;i<m;i++)
+    {
+        for(j = 0;j<n;j++)
+        {
+            Transpose[j][i] = Matrix[i][j];
+        }
+    }
+    printf("The Transpose of Matrix:");
+    for(i = 0;i<n;i++)
+    {
+        for(j = 0;j<m;j++)
+        {
+            printf("%d ",Transpose[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+
+}
+
 39. Write a C program to multiply two matrices.
 Ans:-
 
