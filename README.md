@@ -618,6 +618,36 @@ int main()
 31. Write a C program to find an item from an array by Linear search.
 Ans:-
 
+#include<stdio.h>
+int main()
+{
+
+    int arr[100], n, search, i;
+    printf("How many elements in array : ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("Enter your search number : ");
+    scanf("%d", &search);
+    for(i=0;i<n;i++)
+    {
+        if(arr[i] == search)
+        {
+            printf("%d find successfully find the location is %d\n", search, i+1);
+            break;
+        }
+    }
+    if(i == n)
+    {
+        printf("Unsuccessfully\n");
+    }
+    return 0;
+    
+}
+
+
 32. Write a C program to find an item from an array by binary search.
 Ans:-
 
