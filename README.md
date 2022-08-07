@@ -518,8 +518,8 @@ int main()
   
 }
 
-28. Write a C program to find the fibonacci series in c programming: c program for Fibonacci series without and with recursion.
-Ans :-
+28. Write a C program to find the fibonacci series in c programming: c program for Fibonacci series without and with recursion.                                      Ans :-  
+
 উল্লেখ্য যে, পর পর দুটি সংখ্যা যোগ করলে ফিবন্যাসি সিরিজের তৃতীয় সংখ্যাটি পাওয়া যায়।
 
 #include<stdio.h>
