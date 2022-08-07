@@ -880,5 +880,24 @@ int main()
         
 }
 
+47. Write a C program to check subsequence.
+48. Write a C program to remove spaces, blanks from a string.
+49. Write a C program to change the case of a string.
+50. Write a C program to swap two strings.
+51. Write C program to find frequency of characters in a string.
+52. Write C program to find the anagrams. Two words are said to be anagrams of each other if the letters from one word can be rearranged to form the other word.
+
+53. Write a program to copy one string to another using pointer
+54. Write a program to concatenate two strings using pointers.
+55. Write a program to find the sum of all the elements of an array using pointers.
+56. Write a program to search an element in array using pointers.
+57. Write a C program to read a file.
+58. Write a C program to copy a file
+59. Write a C program to merge two files.
+60. Write a C program to a delete a file.
+61. Write a C program to generate random numbers.
+62. Write a C program to add two complex numbers
+63. Write a C program to accept two integers for a coordinate point and determine its quadrant.
+64. Students need to do a project based on C language.
 
 
