@@ -819,8 +819,90 @@ Ans:-
 
 #include<stdio.h>
 int main()
+{
+
+    int first [10][10],second[10][10],result[10][10],r1,r2,c1,c2,i,j,k,sum=0;
+
+    printf("Enter rows and column for 1st matrix: ");
+    scanf("%d  %d", &r1, &c1);
+    printf("Enter rows and column for 2nd matrix: ");
+    scanf("%d  %d", &r2, &c2);
+
+    while(c1!=r2)
+    {
+        printf ("Error!! Column of 1st matrix not equal to row of 2nd");
+
+        printf("Enter rows and column for 1st matrix: ");
+        scanf("%d  %d", &r1, &c1);
+        printf("Enter rows and column for 2nd matrix: ");
+        scanf("%d  %d", &r2, &c2);
+    }
+
+    printf("\nEnter elements for 1st Matrix\n");
+    for(i=0;i<r1;i++)
+    {
+        for(j=0;j<c1;j++)
+        {
+            printf("first [%d][%d]= ",i,j);
+            scanf("%d", &first[i][j]);
+        }
+    }
+    printf("\nEnter elements for 2nd Matrix\n");
+    for(i=0;i<r2;i++)
+    {
+        for(j=0;j<c2;j++)
+        {
+            printf("second [%d][%d]= ",i,j);
+            scanf("%d", &second[i][j]);
+        }
+    }
+        for(i=0;i<r1;i++)
+    {
+         for(j=0;j<c2;j++)
+    {
+         for(k=0;k<c1;k++)
+         {
+           sum = sum + first[i][k]*second[k][j];
+         }
 
 
+       result[i][j] = sum;
+        sum = 0;
+      }
+    }
+
+
+    printf("\n\nFirst Matrix\n");
+    for(i=0;i<r1;i++)
+    {
+        printf(" ");
+        for(j=0;j<c1;j++)
+        {
+            printf("%d ", first[i][j]);
+        }
+        printf("\n");
+    }
+
+       printf("\n\nSecond Matrix\n");
+    for(i=0;i<r2;i++)
+    {
+        printf("\t");
+        for(j=0;j<c2;j++){
+            printf("%d ", second[i][j]);}
+        printf("\n");
+    }
+
+     printf("\n\nResult Matrix\n");
+    for(i=0;i<r1;i++)
+    {
+        printf("\t");
+        for(j=0;j<c2;j++){
+            printf("%d ", result[i][j]);}
+        printf("\n");
+    }
+
+    return 0;
+}
 
 40. Write a C program to print a string.
 Ans:-
@@ -881,23 +963,39 @@ int main()
 }
 
 47. Write a C program to check subsequence.
+
 48. Write a C program to remove spaces, blanks from a string.
+
 49. Write a C program to change the case of a string.
+
 50. Write a C program to swap two strings.
+
 51. Write C program to find frequency of characters in a string.
+
 52. Write C program to find the anagrams. Two words are said to be anagrams of each other if the letters from one word can be rearranged to form the other word.
 
 53. Write a program to copy one string to another using pointer
+
 54. Write a program to concatenate two strings using pointers.
+
 55. Write a program to find the sum of all the elements of an array using pointers.
+
 56. Write a program to search an element in array using pointers.
+
 57. Write a C program to read a file.
+
 58. Write a C program to copy a file
+
 59. Write a C program to merge two files.
+
 60. Write a C program to a delete a file.
+
 61. Write a C program to generate random numbers.
+
 62. Write a C program to add two complex numbers
+
 63. Write a C program to accept two integers for a coordinate point and determine its quadrant.
+
 64. Students need to do a project based on C language.
 
 
