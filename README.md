@@ -950,15 +950,98 @@ int main()
 }
 
 41. Write a C program to print length of string.
+Ans:-
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+
+    char a[100];
+    int length;
+
+    printf("Enter a string,to calculate it's length\n");
+    gets(a);
+
+    length = strlen(a);
+
+    printf("Length of entered string is %d\n",length);
+
+    return 0;
+    
+}
 
 42. Write a C program to compare two strings.
+Ans:-
+
+#include<stdio.h>
+int main()
+{
+
+    int i, j, num;
+    printf("How many number you will take for sentence = ");
+    scanf("%d",&num);
+    printf("Give me the sentence = \n");
+    char a[num], b[num];
+    for(i=0;i<num;i++)
+        {
+            scanf("%c",&a[i]);
+        }
+    for(i = num - 1, j = 0; i >= 0;i--,j++)
+        {
+            b[j] = a[i];
+        }
+    printf("Reverse the sentence : \n");
+    for (i = 0; i < num; i++)
+        printf("%c", b[i]);
+        
+    return 0;    
+}
 
 43. Write a C program to compare two strings.
+Ans:-
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+
+    char source[1000], destination[1000];
+    printf("Input a string\n");
+    gets(source);
+    strcpy(destination,source);
+    printf("Source string:      \"%s\"\n",source);
+    printf("Destination string: \"%s\"\n",destination);
+
+    return 0;
+    
+}
 
 44. Write a C program to copy a string.
 Ans:-
 
+
+
 45. Write a C program to concatenate two strings.
+Ans:-
+
+#include<stdio.h>
+#include<strings.h>
+int main()
+{
+
+    char a[1000], b[1000];
+    printf("Enter the first strings\n");
+    gets(a);
+    printf("Enter the second strings\n");
+    gets(b);
+    strcat(a,b);
+    printf("Strings obtained on concatenation is %s\n",a);
+
+    return 0;
+    
+}
+
 
 46. Write a C program to reverse a string.
 Ans:-
