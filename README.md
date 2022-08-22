@@ -356,6 +356,34 @@ int main()
 
 15. Write a C program to find the greatest common divisor (GCD) and least common
 multiple (LCM) of two numbers.
+Ans:-
+
+#include<stdio.h>
+int main()
+{
+
+    printf("Enter the two integer numbers : ");
+    int i1 = 0, i2 = 0;
+    scanf("%d %d",&i1, &i2);
+
+    int GCD = 0;
+    int max = (i1 > i2) ? i1 : i2;
+    for(int i = 1; i<= max/2;i++)
+    {
+        if(i1%i==0 && i2%i==0)
+            GCD = i;
+    }
+    int LCM = max;
+    for(; LCM <= i1*i2 ; LCM++)
+    {
+        if(LCM%i1 == 0 && LCM%i2 == 0)
+        break;
+    }
+    printf("GCD=%d , LCD=%d",GCD, LCM);
+
+    return 0;
+    
+}
 
 16. Write a C program to find the number of integers divisible by 5 between the given range num1 and num2, where num1 < num2. Also find the sum of all these integer numbers, which are divisible by 5 and display the total.
 Ans :-
