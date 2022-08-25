@@ -974,31 +974,8 @@ int main()
 42. Write a C program to compare two strings.
 Ans:-
 
-#include<stdio.h>
-int main()
-{
 
-    int i, j, num;
-    printf("How many number you will take for sentence = ");
-    scanf("%d",&num);
-    printf("Give me the sentence = \n");
-    char a[num], b[num];
-    for(i=0;i<num;i++)
-        {
-            scanf("%c",&a[i]);
-        }
-    for(i = num - 1, j = 0; i >= 0;i--,j++)
-        {
-            b[j] = a[i];
-        }
-    printf("Reverse the sentence : \n");
-    for (i = 0; i < num; i++)
-        printf("%c", b[i]);
-        
-    return 0;    
-}
-
-43. Write a C program to compare two strings.
+43. Write a C program to copy two strings.
 Ans:-
 
 #include<stdio.h>
@@ -1017,12 +994,7 @@ int main()
     
 }
 
-44. Write a C program to copy a string.
-Ans:-
-
-
-
-45. Write a C program to concatenate two strings.
+44. Write a C program to concatenate two strings.
 Ans:-
 
 #include<stdio.h>
@@ -1043,7 +1015,7 @@ int main()
 }
 
 
-46. Write a C program to reverse a string.
+45. Write a C program to reverse a string.
 Ans:-
 
 #include<stdio.h>
@@ -1073,6 +1045,8 @@ int main()
         
 }
 
+46. Write a C program to delete vowels from a string.
+
 47. Write a C program to check subsequence.
 
 48. Write a C program to remove spaces, blanks from a string.
@@ -1083,9 +1057,10 @@ int main()
 
 51. Write C program to find frequency of characters in a string.
 
-52. Write C program to find the anagrams. Two words are said to be anagrams of each other if the letters from one word can be rearranged to form the other word.
+52. Write C program to find the anagrams. Two words are said to be anagrams of each other
+if the letters from one word can be rearranged to form the other word.
 
-53. Write a program to copy one string to another using pointer
+53. Write a program to copy one string to another using pointer.
 
 54. Write a program to concatenate two strings using pointers.
 
@@ -1095,7 +1070,7 @@ int main()
 
 57. Write a C program to read a file.
 
-58. Write a C program to copy a file
+58. Write a C program to copy a file.
 
 59. Write a C program to merge two files.
 
@@ -1103,10 +1078,10 @@ int main()
 
 61. Write a C program to generate random numbers.
 
-62. Write a C program to add two complex numbers
+62. Write a C program to add two complex numbers.
 
-63. Write a C program to accept two integers for a coordinate point and determine its quadrant.
+63. Write a C program to accept two integers for a coordinate point and determine its
+quadrant.
 
 64. Students need to do a project based on C language.
-
 
